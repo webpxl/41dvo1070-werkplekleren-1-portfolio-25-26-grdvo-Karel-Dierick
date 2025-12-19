@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Verplaatste regels uit index.html */
+html { scroll-behavior: smooth; }
+/* Optioneel: geef body extra top-padding zodat inhoud niet onder de fixed navbar valt */
+body { padding-top: 70px; }
+/* Zorg dat het #contact anker niet onder de fixed navbar terechtkomt bij scrollen */
+#contact { scroll-margin-top: 80px; }
