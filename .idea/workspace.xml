@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="hallo">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="test push">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -28,18 +38,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "KarelDierickPXL"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KarelDierickPXL&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/webpxl/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick",
-    "accountId": "b87686da-4843-4f89-b93c-eadf55987d58"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/webpxl/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick&quot;,
+    &quot;accountId&quot;: &quot;b87686da-4843-4f89-b93c-eadf55987d58&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -52,28 +62,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karel\OneDrive - PXL\Github\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick\Assets" />
+      <recent name="C:\Users\karel\OneDrive - PXL\Github\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-WS-252.28539.21" />
       </set>
     </attachedChunks>
   </component>
@@ -87,7 +107,13 @@
       <workItem from="1764922405520" duration="415000" />
       <workItem from="1765528334094" duration="3390000" />
       <workItem from="1765535500221" duration="873000" />
-      <workItem from="1765537728483" duration="23000" />
+      <workItem from="1765537728483" duration="3495000" />
+      <workItem from="1766059447469" duration="53000" />
+      <workItem from="1766059652567" duration="139000" />
+      <workItem from="1766133641961" duration="9210000" />
+      <workItem from="1766155331424" duration="366000" />
+      <workItem from="1767363014144" duration="1564000" />
+      <workItem from="1767718892090" duration="2303000" />
     </task>
     <task id="LOCAL-00001" summary="second try">
       <option name="closed" value="true" />
@@ -105,7 +131,47 @@
       <option name="project" value="LOCAL" />
       <updated>1765537530276</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hallo">
+      <option name="closed" value="true" />
+      <created>1765537761484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765537761484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CSS-file toegevoegd">
+      <option name="closed" value="true" />
+      <created>1765538048826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765538048826</updated>
+    </task>
+    <task id="LOCAL-00005" summary="naam toegevoegd">
+      <option name="closed" value="true" />
+      <created>1765542912218</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765542912218</updated>
+    </task>
+    <task id="LOCAL-00006" summary="navigation toegevoegd">
+      <option name="closed" value="true" />
+      <created>1766138510423</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766138510423</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test push">
+      <option name="closed" value="true" />
+      <created>1767363113500</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767363113500</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +191,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second try" />
     <MESSAGE value="hallo" />
-    <option name="LAST_COMMIT_MESSAGE" value="hallo" />
+    <MESSAGE value="CSS-file toegevoegd" />
+    <MESSAGE value="naam toegevoegd" />
+    <MESSAGE value="navigation toegevoegd" />
+    <MESSAGE value="test push" />
+    <option name="LAST_COMMIT_MESSAGE" value="test push" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

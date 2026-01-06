@@ -35,10 +35,24 @@
 <main class="container my-5">
   <h1>Welkom</h1>
   <p>Doe hier je content. Scroll naar beneden of klik op Contact om naar het footer-anker te gaan.</p>
-  <div style="height:1200px">
-
-  </div>
+  <!--<div class="spacer"></div>-->
 </main>
+
+<section class="gallery-section py-5">
+  <div class="container position-relative">
+    <div class="gallery-wrapper mx-auto">
+      <button class="gallery-btn prev btn btn-light" aria-label="Previous" id="galleryPrev">&#8249;</button>
+
+      <div class="gallery">
+        <img class="gallery-img left" src="Assets/download.jpg" alt="left image">
+        <img class="gallery-img center" src="Assets/img.png" alt="center image">
+        <img class="gallery-img right" src="Assets/download.jpg" alt="right image">
+      </div>
+
+      <button class="gallery-btn next btn btn-light" aria-label="Next" id="galleryNext">&#8250;</button>
+    </div>
+  </div>
+</section>
 
 <footer id="contact" class="bg-dark text-white py-5">
   <div class="container">
@@ -46,8 +60,6 @@
     <p>Hier staat je contactinformatie of een contactformulier.</p>
   </div>
 </footer>
-
-<p>test</p>
 
 </body>
 </html>
