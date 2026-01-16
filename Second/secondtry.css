@@ -45,6 +45,8 @@ h1, h2, h3, h4, .navbar, .btn, .view-link, .year, .category-tag, .edu-tag {
     border-radius: 50%;
     opacity: 0.5;
     pointer-events: none; /* ensure individual stars never capture events */
+    transition: opacity 900ms ease-in-out; /* animate opacity for twinkle */
+    will-change: opacity;
 }
 
 /* Navigation */
@@ -121,7 +123,7 @@ h1, h2, h3, h4, .navbar, .btn, .view-link, .year, .category-tag, .edu-tag {
 
 /* Hero */
 .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,13 +352,14 @@ h1, h2, h3, h4, .navbar, .btn, .view-link, .year, .category-tag, .edu-tag {
 .contact-info {
     flex: 1 1 48%;
     min-width: 220px;
+    gap: 3.6vh
 }
 
 .contact-form {
     flex: 1 1 48%;
     min-width: 260px;
-    background: #656FBB33; /* requested translucent background */
-    border: 1px solid #656FBBFF; /* requested border */
+    background: #FFFFFF07; /* requested translucent background */
+    border: 1px solid #656FBB33; /* requested border */
     padding: 22px;
     border-radius: 12px;
 }
@@ -583,3 +586,89 @@ nav, header, main, section, footer, .container, .hero, .navbar {
     .about-grid { flex-direction: column; text-align: center; }
     .profile-portrait { width: 160px; height: 160px; }
 }
+
+/* Hamburger button default hide on desktop */
+.hamburger { display:none; background:transparent; border:none; color:var(--text-main); font-size:1.6rem; }
+
+/* Responsive adjustments: container, typography, grids and navigation */
+/* Large desktop -> default styles already cover this */
+
+/* Wide desktop / laptop tweaks */
+@media (max-width: 1200px) {
+  .container { padding: 80px 6%; }
+  .hero h1 { font-size: 3.25rem; }
+  .hero { padding: 0 6%; }
+  .profile-portrait { width: 420px; }
+}
+
+/* Tablet and small laptops */
+@media (max-width: 900px) {
+  .container { padding: 60px 5%; }
+  .hero { height: 70vh; }
+  .hero h1 { font-size: 2.6rem; }
+  .hero .tagline { max-width: 520px; }
+
+  /* Projects - two columns if space allows */
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-img { height: 180px; }
+
+  /* Timeline - reduce left padding */
+  .timeline-item { padding-left: 36px; }
+  .timeline-content { width: calc(100% - 36px); }
+}
+
+/* Mobile portrait */
+@media (max-width: 600px) {
+  .container { padding: 40px 5%; }
+  .hero { height: 60vh; padding: 0 5%; }
+  .hero h1 { font-size: 2rem; }
+  .hero .tagline { max-width: 360px; font-size: 0.95rem; }
+
+  /* Projects single column */
+  .projects-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .project-img { height: 140px; }
+
+  /* Profile portrait smaller */
+  .profile-portrait { width: 140px; height: 140px; }
+
+  /* Reduce info-card sizes in about */
+  .info-card { width: 100%; }
+
+  /* Timeline: stack content full width and smaller dots */
+  .timeline::before { left: 8px; }
+  .timeline-item { padding-left: 28px; }
+  .timeline-item::before { left: 8px; top: 14px; width: 12px; height: 12px; }
+  .timeline-content { width: calc(100% - 28px); }
+
+  /* Contact: ensure good spacing */
+  .contact-grid { gap: 1rem; }
+  .contact-form { padding: 18px; }
+}
+
+/* Very small phones: turn nav into full-screen overlay and hide some visuals */
+@media (max-width: 440px) {
+  /* Make the nav-links full width and anchored below the navbar */
+  .nav-links { right: 0; left: 0; top: 56px; margin: 0 12px; padding: 14px; }
+  body.nav-open .nav-links { display:block; }
+  .nav-links { display:none; }
+
+  /* Hide hero big rocket and reduce visual weight */
+  .hero .hero-icon { display:none; }
+
+  /* Ensure buttons are hidden (already done) */
+  .hero-btns { display:none; }
+
+  /* Tighten footer spacing */
+  .footer { padding: 1.25rem 4%; font-size: 0.68rem; }
+}
+
+/* Improve touch targets & readability on small screens */
+@media (max-width: 480px) {
+  .nav-links a { padding: 10px 6px; display:block; }
+  .btn { padding: 10px 18px; font-size: 0.9rem; }
+}
+
+/* Accessibility: increase hit area for hamburger */
+.hamburger { padding: 8px 10px; border-radius: 6px; }
+
+/* ...existing code... */

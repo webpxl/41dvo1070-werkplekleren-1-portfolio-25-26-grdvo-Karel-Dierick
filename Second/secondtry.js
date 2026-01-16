@@ -83,3 +83,88 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     // initial check
     onScroll();
 })();
+
+// Explanation: Add hamburger toggle logic: toggles body.nav-open and updates aria-expanded on the hamburger button.
+(function(){
+    const hamburger = document.getElementById('hamburger');
+    if (!hamburger) return;
+    hamburger.addEventListener('click', ()=>{
+        const isOpen = document.body.classList.toggle('nav-open');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+})();
+
+// Twinkling stars: randomly dim and restore some stars to create a subtle twinkle effect
+// Explanation: Increase the twinkle selection so each cycle will twinkle a random unique subset between half the stars and all of them. Use a Fisher–Yates shuffle to pick unique stars.
+(function(){
+    const starContainer = document.getElementById('stars');
+    if (!starContainer) return;
+
+    // collect stars and remember their base opacity
+    const stars = Array.from(starContainer.querySelectorAll('.star'));
+    if (!stars.length) return;
+
+    stars.forEach(s => {
+        // normalize initial opacity to a value between 0.1 and 0.9
+        s.dataset.baseOpacity = parseFloat(getComputedStyle(s).opacity) || 0.5;
+    });
+
+    function randomRange(min, max){ return Math.random() * (max - min) + min; }
+
+    function twinkleOnce(){
+        // choose how many stars to twinkle this cycle: between half and all
+        const minCount = Math.max(1, Math.floor(stars.length / 2));
+        const maxCount = stars.length;
+        const count = Math.floor(randomRange(minCount, maxCount + 1));
+
+        // pick 'count' unique random stars via Fisher–Yates on indices
+        const indices = stars.map((_, i) => i);
+        for (let i = indices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const tmp = indices[i]; indices[i] = indices[j]; indices[j] = tmp;
+        }
+
+        for (let k = 0; k < count; k++) {
+            const s = stars[indices[k]];
+            if(!s) continue;
+            // skip if currently dimmed
+            if (s.dataset.twinkling === '1') continue;
+            s.dataset.twinkling = '1';
+
+            const base = parseFloat(s.dataset.baseOpacity) || 0.5;
+            // target dim opacity (small random dimming)
+            const dim = randomRange(Math.max(0.02, base * 0.02), Math.max(0.05, base * 0.4));
+            const hold = randomRange(150, 900); // ms to keep dim (slightly quicker for many stars)
+
+            // apply dim
+            s.style.opacity = String(dim);
+
+            // restore after hold + small random fade-in delay
+            setTimeout(()=>{
+                s.style.opacity = String(base);
+                // clear twinkle flag after transition time
+                setTimeout(()=>{ s.dataset.twinkling = '0'; }, 950);
+            }, hold);
+        }
+    }
+
+    // schedule periodic twinkles with some jitter
+    let twinkleInterval = setInterval(twinkleOnce, 700);
+
+    // make interval adapt to visibility and resize
+    function updateInterval(){
+        clearInterval(twinkleInterval);
+        // slower on small screens
+        const interval = window.innerWidth < 600 ? 900 : 700;
+        twinkleInterval = setInterval(twinkleOnce, interval);
+    }
+
+    window.addEventListener('resize', updateInterval);
+    document.addEventListener('visibilitychange', ()=>{
+        if (document.hidden) clearInterval(twinkleInterval);
+        else updateInterval();
+    });
+
+    // initial
+    updateInterval();
+})();

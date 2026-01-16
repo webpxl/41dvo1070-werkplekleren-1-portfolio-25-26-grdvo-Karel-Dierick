@@ -5,5 +5,4 @@ This is a sample privacy-guidelines file. Replace with your real privacy policy.
 - Contact data (email/phone) shown on this site are provided by the site owner for the purpose of professional contact only.
 - No personal data is collected by this static site unless explicitly provided via form submissions.
 - If you send personal details via the contact form, they will be processed by the site owner for contact purposes and will not be shared with third parties without consent.
-- To request removal or correction of personal data, contact hello@kareldierick.com.
-
+- To request removal or correction of personal data, please use the contact form on the site's contact page.

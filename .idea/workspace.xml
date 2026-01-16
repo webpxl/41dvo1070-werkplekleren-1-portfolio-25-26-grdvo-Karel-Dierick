@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="privacy link and back to top">
-      <change afterPath="$PROJECT_DIR$/Assets/Dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Taskflow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/portrait.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/rocket-62.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/send-symbol-svgrepo-com (1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/send-symbol-svgrepo-com.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Second/privacy.html" afterDir="false" />
+    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="privacy link to other page, about me aligned">
+      <change beforePath="$PROJECT_DIR$/Second/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/privacy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Second/privacy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/secondtry.css" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/secondtry.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/secondtry.js" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.js" afterDir="false" />
@@ -118,7 +113,7 @@
       <workItem from="1766155331424" duration="366000" />
       <workItem from="1767363014144" duration="1564000" />
       <workItem from="1767718892090" duration="3530000" />
-      <workItem from="1768318581488" duration="15781000" />
+      <workItem from="1768318581488" duration="20442000" />
     </task>
     <task id="LOCAL-00001" summary="second try">
       <option name="closed" value="true" />
@@ -200,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768563410802</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="privacy link to other page, about me aligned">
+      <option name="closed" value="true" />
+      <created>1768574813770</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1768574813770</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +230,8 @@
     <MESSAGE value="gallery added" />
     <MESSAGE value="second try almost done" />
     <MESSAGE value="privacy link and back to top" />
-    <option name="LAST_COMMIT_MESSAGE" value="privacy link and back to top" />
+    <MESSAGE value="privacy link to other page, about me aligned" />
+    <option name="LAST_COMMIT_MESSAGE" value="privacy link to other page, about me aligned" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
