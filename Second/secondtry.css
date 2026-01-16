@@ -1,0 +1,356 @@
+* {
+    /*padding: 0;
+    margin: 0;*/
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #090911;
+    --accent-blue: #656FBB;
+    --text-main: #CECEDA;
+    --accent-coral: #EE7263;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border-color: rgba(101, 111, 187, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .navbar, .btn, .view-link, .year, .category-tag, .edu-tag {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Star Background */
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at center, #111122 0%, #090911 100%);
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: rgba(9, 9, 17, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: var(--accent-coral);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-coral);
+}
+
+/* Sections */
+.container {
+    padding: 100px 10%;
+}
+
+.section-title {
+    color: var(--accent-coral);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.hero .subtitle {
+    color: var(--accent-blue);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .tagline {
+    max-width: 600px;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #656FBB, #EE7263);
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    border: 1px solid var(--accent-blue);
+    color: var(--text-main);
+    margin-left: 1rem;
+}
+
+/* Cards */
+.info-card, .project-card, .timeline-content, .contact-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-img {
+    height: 200px;
+    background: rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.category-tag {
+    font-size: 0.6rem;
+    color: var(--accent-blue);
+    background: rgba(101, 111, 187, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.skill-tags span {
+    font-size: 0.7rem;
+    border: 1px solid var(--border-color);
+    padding: 2px 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.view-link {
+    color: var(--accent-coral);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+/* Timeline - centered layout */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+    gap: 2rem;
+    position: relative;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+/* vertical center line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-coral);
+}
+
+.timeline-item {
+    position: relative;
+    /* make all items same width and center them */
+    width: 80%;
+    max-width: 900px;
+    min-width: 320px;
+}
+
+/* dot on the center line for each item */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-color);
+    border: 2px solid var(--accent-coral);
+    border-radius: 50%;
+}
+
+/* timeline content: remove left margin/padding used for the old left-aligned style */
+.timeline-content {
+    background: rgba(255, 255, 255, 0.03); /* keep existing look */
+    border: 1px solid rgba(101, 111, 187, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    margin-left: 0; /* override old rule */
+}
+
+/* Footer dot: position over the center line */
+.timeline-footer {
+    position: relative;
+    padding-left: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #EE7263;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(238, 114, 99, 0.4);
+}
+
+.year { color: var(--accent-coral); font-size: 1.5rem; }
+.edu-tag { font-size: 0.7rem; color: var(--accent-blue); }
+
+/* Form */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 2rem 5%;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+/* Container for the 2025 header to align the badge to the right */
+.entry-2025 .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Specific styling for the Graduaat badge */
+.edu-tag-badge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: #656FBB; /* Your accent-blue variable */
+    background: rgba(101, 111, 187, 0.15);
+    padding: 6px 15px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* Card layout for timeline items */
+.timeline-content {
+    background: rgba(255, 255, 255, 0.03); /* var(--card-bg) */
+    border: 1px solid rgba(101, 111, 187, 0.2); /* var(--border-color) */
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Flexbox to align school name and badge */
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Badge styling for all timeline tags */
+.edu-tag-badge {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.65rem;
+    color: #656FBB; /* Accent blue */
+    background: rgba(101, 111, 187, 0.15); /* Semi-transparent blue background */
+    padding: 6px 15px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    white-space: nowrap; /* Prevents tag from wrapping */
+}
+
+/* Year styling */
+.year {
+    font-family: 'Orbitron', sans-serif;
+    color: #EE7263; /* Accent coral */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
