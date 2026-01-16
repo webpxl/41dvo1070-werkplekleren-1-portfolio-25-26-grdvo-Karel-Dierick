@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="test push">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/download.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/img.png" afterDir="false" />
+    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="second try almost done">
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103907.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103926.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103950.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104146.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104256.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/secondtry.css" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -25,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -113,7 +113,8 @@
       <workItem from="1766133641961" duration="9210000" />
       <workItem from="1766155331424" duration="366000" />
       <workItem from="1767363014144" duration="1564000" />
-      <workItem from="1767718892090" duration="2303000" />
+      <workItem from="1767718892090" duration="3530000" />
+      <workItem from="1768318581488" duration="4931000" />
     </task>
     <task id="LOCAL-00001" summary="second try">
       <option name="closed" value="true" />
@@ -171,7 +172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767363113500</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gallery added">
+      <option name="closed" value="true" />
+      <created>1767723688290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767723688290</updated>
+    </task>
+    <task id="LOCAL-00009" summary="second try almost done">
+      <option name="closed" value="true" />
+      <created>1768560710498</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768560710498</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +212,9 @@
     <MESSAGE value="naam toegevoegd" />
     <MESSAGE value="navigation toegevoegd" />
     <MESSAGE value="test push" />
-    <option name="LAST_COMMIT_MESSAGE" value="test push" />
+    <MESSAGE value="gallery added" />
+    <MESSAGE value="second try almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="second try almost done" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

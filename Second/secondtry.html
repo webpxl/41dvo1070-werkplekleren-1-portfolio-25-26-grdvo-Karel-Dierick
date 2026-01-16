@@ -12,6 +12,7 @@
 </head>
 <body>
 <div id="stars"></div>
+<div id="page">
 
 <nav class="navbar">
     <div class="logo">KD</div>
@@ -211,9 +212,14 @@
                 <div class="contact-card"><span>📍</span> LOCATION<br>Ginelom, Belgium</div>
             </div>
             <div class="contact-form">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="your@email.com">
-                <textarea placeholder="Your message..." rows="5"></textarea>
+                <label for="contact-name" class="visually-hidden">Your name</label>
+                <input id="contact-name" type="text" placeholder="Your name">
+
+                <label for="contact-email" class="visually-hidden">Your email</label>
+                <input id="contact-email" type="email" placeholder="your@email.com">
+
+                <label for="contact-message" class="visually-hidden">Your message</label>
+                <textarea id="contact-message" placeholder="Your message..." rows="5"></textarea>
                 <button class="btn btn-primary form-btn">SEND MESSAGE 🚀</button>
             </div>
         </div>
@@ -223,9 +229,13 @@
 <footer class="footer">
     <div>🚀 Karel Dierick © 2026</div>
     <div>Designed & Built with passion in the digital cosmos</div>
-    <div class="back-to-top"><a href="#home">BACK TO TOP</a></div>
+    <div class="privacy-link"><a href="./privacy.txt" download>Privacy-guidelines</a></div>
 </footer>
 
-<script src="script.js"></script>
+</div> <!-- end #page -->
+
+<!-- Scroll-to-top rocket button (hidden until user scrolls past hero) -->
+<button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">🚀</button>
+
 </body>
 </html>
