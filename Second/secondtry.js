@@ -37,21 +37,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll-to-top rocket button behavior
+// Scroll-to-top rocket button behavior (enhanced: nav height, footer observer, responsive)
 (function(){
     const btn = document.getElementById('scrollTopBtn');
     const hero = document.getElementById('home');
-    if (!btn || !hero) return;
+    const navbar = document.querySelector('.navbar');
+    const footer = document.querySelector('.footer');
+    if (!btn || !hero || !navbar) return;
 
+    // set CSS variable for nav height so body padding-top matches
+    function updateNavHeight(){
+        const h = navbar.getBoundingClientRect().height || 80;
+        document.documentElement.style.setProperty('--nav-height', `${h}px`);
+    }
+
+    // show/hide button when scrolled past hero
     function onScroll(){
         const heroBottom = hero.getBoundingClientRect().bottom;
-        // if we've scrolled past the hero (hero bottom <= 0), show button
         if (heroBottom <= 0) btn.classList.add('visible');
         else btn.classList.remove('visible');
     }
 
+    // observe footer intersection to lift button above footer
+    let footerObserver = null;
+    if (footer) {
+        footerObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) btn.classList.add('above-footer');
+                else btn.classList.remove('above-footer');
+            });
+        }, { root: null, threshold: 0 });
+        footerObserver.observe(footer);
+    }
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
+    window.addEventListener('resize', () => {
+        updateNavHeight();
+        onScroll();
+    });
 
     btn.addEventListener('click', ()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' });

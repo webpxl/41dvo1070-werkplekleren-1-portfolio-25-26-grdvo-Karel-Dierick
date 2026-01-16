@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="second try almost done">
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103907.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103926.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 103950.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104146.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104238.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Schermafbeelding 2026-01-16 104256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c653b1f3-aabc-41df-b2ed-033f4ecf0e0d" name="Changes" comment="privacy link and back to top">
+      <change afterPath="$PROJECT_DIR$/Assets/Dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Taskflow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/portrait.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/rocket-62.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/send-symbol-svgrepo-com (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/send-symbol-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Second/privacy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Second/secondtry.css" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/secondtry.html" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Second/secondtry.js" beforeDir="false" afterPath="$PROJECT_DIR$/Second/secondtry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +62,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/karel/OneDrive - PXL/Github/41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick/Assets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karel\OneDrive - PXL\Github\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick\Assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\karel\OneDrive - PXL\Github\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick\Assets" />
       <recent name="C:\Users\karel\OneDrive - PXL\Github\41dvo1070-werkplekleren-1-portfolio-25-26-grdvo-Karel-Dierick" />
@@ -114,7 +118,7 @@
       <workItem from="1766155331424" duration="366000" />
       <workItem from="1767363014144" duration="1564000" />
       <workItem from="1767718892090" duration="3530000" />
-      <workItem from="1768318581488" duration="4931000" />
+      <workItem from="1768318581488" duration="15781000" />
     </task>
     <task id="LOCAL-00001" summary="second try">
       <option name="closed" value="true" />
@@ -188,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768560710498</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="privacy link and back to top">
+      <option name="closed" value="true" />
+      <created>1768563410802</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768563410802</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +226,8 @@
     <MESSAGE value="test push" />
     <MESSAGE value="gallery added" />
     <MESSAGE value="second try almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="second try almost done" />
+    <MESSAGE value="privacy link and back to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="privacy link and back to top" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
