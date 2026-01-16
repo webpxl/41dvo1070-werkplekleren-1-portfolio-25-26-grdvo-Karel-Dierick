@@ -590,85 +590,37 @@ nav, header, main, section, footer, .container, .hero, .navbar {
 /* Hamburger button default hide on desktop */
 .hamburger { display:none; background:transparent; border:none; color:var(--text-main); font-size:1.6rem; }
 
-/* Responsive adjustments: container, typography, grids and navigation */
-/* Large desktop -> default styles already cover this */
-
-/* Wide desktop / laptop tweaks */
-@media (max-width: 1200px) {
-  .container { padding: 80px 6%; }
-  .hero h1 { font-size: 3.25rem; }
-  .hero { padding: 0 6%; }
-  .profile-portrait { width: 420px; }
-}
-
-/* Tablet and small laptops */
-@media (max-width: 900px) {
-  .container { padding: 60px 5%; }
-  .hero { height: 70vh; }
-  .hero h1 { font-size: 2.6rem; }
-  .hero .tagline { max-width: 520px; }
-
-  /* Projects - two columns if space allows */
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
-  .project-img { height: 180px; }
-
-  /* Timeline - reduce left padding */
-  .timeline-item { padding-left: 36px; }
-  .timeline-content { width: calc(100% - 36px); }
-}
-
-/* Mobile portrait */
+/* Mobile-specific rules at 440px and below */
 @media (max-width: 600px) {
-  .container { padding: 40px 5%; }
-  .hero { height: 60vh; padding: 0 5%; }
-  .hero h1 { font-size: 2rem; }
-  .hero .tagline { max-width: 360px; font-size: 0.95rem; }
+    /* show hamburger */
+    .hamburger { display:block; }
 
-  /* Projects single column */
-  .projects-grid { grid-template-columns: 1fr; gap: 1.25rem; }
-  .project-img { height: 140px; }
+    /* hide the nav links by default; will be shown with .nav-open on body */
+    .nav-links { display:none; position: absolute; top: 64px; right: 12px; background: rgba(9,9,17,0.95); border-radius:8px; padding: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); }
+    .nav-links li { display:block; margin: 8px 0; }
 
-  /* Profile portrait smaller */
-  .profile-portrait { width: 140px; height: 140px; }
+    /* when body has .nav-open, show the nav-links */
+    body.nav-open .nav-links { display:block; }
 
-  /* Reduce info-card sizes in about */
-  .info-card { width: 100%; }
+    /* hide hero buttons on very small screens */
+    .hero-btns { display:none; }
 
-  /* Timeline: stack content full width and smaller dots */
-  .timeline::before { left: 8px; }
-  .timeline-item { padding-left: 28px; }
-  .timeline-item::before { left: 8px; top: 14px; width: 12px; height: 12px; }
-  .timeline-content { width: calc(100% - 28px); }
+    /* about info cards: .info-grid should become 2x2 using flexbox */
+    .info-grid { display:flex; flex-direction: column; gap:12px; }
+    .info-card { flex: 1 1 calc(50% - 12px); box-sizing: border-box; }
 
-  /* Contact: ensure good spacing */
-  .contact-grid { gap: 1rem; }
-  .contact-form { padding: 18px; }
+    /* hide top-right tags on timeline items */
+    .edu-tag-badge { display:none; }
 }
 
-/* Very small phones: turn nav into full-screen overlay and hide some visuals */
-@media (max-width: 440px) {
-  /* Make the nav-links full width and anchored below the navbar */
-  .nav-links { right: 0; left: 0; top: 56px; margin: 0 12px; padding: 14px; }
-  body.nav-open .nav-links { display:block; }
-  .nav-links { display:none; }
-
-  /* Hide hero big rocket and reduce visual weight */
-  .hero .hero-icon { display:none; }
-
-  /* Ensure buttons are hidden (already done) */
-  .hero-btns { display:none; }
-
-  /* Tighten footer spacing */
-  .footer { padding: 1.25rem 4%; font-size: 0.68rem; }
+/* Explanation: Add styling for the new .nav-reflect button in the navbar, matching existing btn styles but smaller; hide in very small screens (menu handles navigation there). */
+.nav-reflect{
+    margin-left: 1rem;
+    padding: 8px 14px;
+    font-size: 0.8rem;
 }
 
-/* Improve touch targets & readability on small screens */
-@media (max-width: 480px) {
-  .nav-links a { padding: 10px 6px; display:block; }
-  .btn { padding: 10px 18px; font-size: 0.9rem; }
+@media (max-width: 440px){
+    /* hide standalone nav button when mobile menu is used */
+    .nav-reflect{ display:none; }
 }
-
-/* Accessibility: increase hit area for hamburger */
-.hamburger { padding: 8px 10px; border-radius: 6px; }
-
-/* ...existing code... */
